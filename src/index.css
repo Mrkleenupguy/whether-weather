@@ -5,9 +5,63 @@ body {
     sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+  text-align: center;
 }
 
 code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New",
     monospace;
+}
+
+a {
+  text-decoration: none;
+}
+
+.weatherApp {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.weatherAppTitle {
+  width: 400px;
+}
+
+.weatherWeek {
+  display: flex;
+  flex-direction: row;
+}
+
+.weatherCard {
+  background-color: white;
+  border: 1px solid #f1f1f1;
+  border-radius: 5px;
+  width: 100px;
+  height: 120px;
+  margin: 0px 5px;
+}
+
+.weatherCard:hover {
+  background-color: #f1f1f1;
+}
+
+.temps {
+  display: flex;
+  justify-content: center;
+}
+
+.highTemp {
+  max-width: fit-content;
+}
+
+.lowTemp {
+  max-width: fit-content;
+  color: #d4d4d4;
+}
+
+.weatherInfo {
+  border: 1px solid #f1f1f1;
+  border-radius: 5px;
+  width: 774px;
+  margin-top: 10px;
 }
